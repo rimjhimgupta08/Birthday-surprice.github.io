@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Open+Sans:wght@300;400;500&family=Poppins:ital,wght@1,200;1,400;1,500&family=Work+Sans:wght@400;500&display=swap');
+
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+body{
+      font-family: 'Dancing Script', cursive;
+      background-image: url(star-cb-editing-new-background-download-full-hd-11663607156xbxk2encr9.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      height: 100vh;
+      width: 100vw;
+
+}
+.container{
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; */
+      align-items: center;
+      /* background-color: black; */
+      
+}
+.card{
+      width: 300px;
+      height: 400px;
+      /* background-color: aqua; */
+      position: relative;
+      border-radius: 20px;
+      margin-top: 50px;
+
+}
+.card .imageBox{
+      position: absolute;
+      inset: 0;
+      /* background-color: rgb(60, 59, 59); */
+      border-radius: 20px;
+}
+.card .imageBox img{
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+      transition: 1s ease-in;
+}
+.card:hover .imageBox img{
+      opacity: 0;
+}
+
+.card .image{
+      position: absolute;
+      z-index: 1000;
+      opacity: 0;
+      transition: 1s ease-in ;
+      transform: translateY(0);
+      width: 270px;
+      height: 350px;
+      border-radius: 20px;
+      margin-left: 20px;
+}
+.card:hover .image{
+      opacity: 1;
+      transform: translateY(-15%);
+
+
+
+}
+.card h2{
+      position: absolute;
+      left: 50%;
+      bottom: 10px;
+      transform: translateX(-50%);
+      background-color: brown;
+      opacity: 0;
+      text-align: center;
+      border-radius: 10px;
+      transition: 1s ease-in;
+}
+.card:hover h2{
+      opacity: 1;
+}
+
+.container h2{
+      color: antiquewhite;
+}
+
+@media screen and (max-width:400px) {
+      body{
+            height: 100%;
+      }
+
+}
